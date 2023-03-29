@@ -1,0 +1,68 @@
+*{
+    margin :0;
+    padding: 0; 
+    font-family: 'Poppins' ;
+    box-sizing: border-box ;
+}
+.sign{
+    width: 100%;
+    height: 100vh ; 
+    background-image: url(/img/sig.png);
+    background-position: center;
+    background-size: cover;
+    position: relative ;
+}
+.formulaire{
+    width: 50%;
+    max-width: 450px;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgb(162, 198, 214);
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+.formulaire h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: rgb(78, 77, 77);
+    position: relative;
+}
+.input-field{
+    background: white;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 15px;
+}
+form p{
+    text-decoration: none;
+    color: black;
+}
+.boutton{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.boutton button {
+    flex-basis: 50%;
+    background: white;
+    height: 40px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin-left: 22%;    
+    margin-top: 10%;
+}
