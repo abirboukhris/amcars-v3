@@ -474,7 +474,19 @@ span.store{
     
 
 }
-
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    height: 80%;
+    position: relative;
+}
+iframe{
+    padding-top: 0;
+    width: 50%;
+    height: 90%;
+}
 /*-----------footer----------*/
 footer{
     width: 100%;
