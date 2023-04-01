@@ -12,7 +12,6 @@
 
 /*-----------BODY----------*/
 body{
-    min-width: 500px;
     overflow-x: hidden;
     background-color: var(--grey);
 }
@@ -21,7 +20,7 @@ body{
     z-index: 2;
     width: 100%;
     height:10%;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255,255,255,0.1);
     border: 1px solid rgba(255,255,255,0.1);
     backdrop-filter: blur(30px);
     color: rgba(255,255,255,0.8);
@@ -42,7 +41,7 @@ body{
     background-color: var(--grey);
     width: 100%;
     height: 100vh;
-    background-image:url("/img/intro.jpg");
+    background-image:url("../amcars-main/img/intro.jpg");
     background-size: cover;
     background-position: center;
     clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 50% 100%, 0 88%);
@@ -338,10 +337,29 @@ span.store{
     -ms-transform:translate(-50%,0%)
 }
 /*-----------BRAND----------*/
+.boutt{
+        border:1px solid currentColor;
+        border-radius: 30px;
+        color:var(--blue);
+        background-color :rgb(99, 99, 99);
+        font-size: var(--titre4);
+        font-weight:600;
+        overflow:hidden;
+        padding:7px 15px;
+        position:relative;
+        text-decoration:none;
+        transition:.5s transform ease-in-out;
+        will-change:transform;
+        z-index:0;
+        -webkit-transition:.5s transform ease-in-out;
+        -moz-transition:.5s transform ease-in-out;
+        -ms-transition:.5s transform ease-in-out;
+        -o-transition:.5s transform ease-in-out;
+}
 .brand{
     width: 100%;
     height: 50%;
-    background-color: rgb(66, 66, 66);
+    background-color: rgb(210, 184, 184);
    
 }
 
@@ -474,19 +492,7 @@ span.store{
     
 
 }
-.video{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    height: 80%;
-    position: relative;
-}
-iframe{
-    padding-top: 0;
-    width: 50%;
-    height: 90%;
-}
+
 /*-----------footer----------*/
 footer{
     width: 100%;
@@ -564,65 +570,26 @@ footer p.hh span{
         top:75%;
         right:70%;
     }
-    .collapse{
-        display: flex;
-        flex-direction: column;
-        background-color: transparent;
-        width: 100vw;
-        height: 300px;
-        justify-content: center;
-        background-color: rgba(0,0,0,.2);
-        backdrop-filter: blur(10px);
-        margin-left: -1500px;
-        transition: all 1.2s ease;
-        align-items: center;
-        z-index: 10;
-        text-align: center;
-    }
+
     .nav-links{
-       /* display: flex;
+        display: flex;
         flex-direction: column;
         background-color: transparent;
         width: 100vw;
         height: 100vh;
         justify-content: center;
-        background-color: rgba(0,150,255,.2);
         backdrop-filter: blur(10px);
         margin-left: -1500px;
         transition: all 1.2s ease;
         align-items: center;
-        z-index: 10;*/
-        display: flex;
-        flex-direction: column;
-
+        z-index: 1;
     }
-    .test{
-        background-color: red;
-        display: flex;
-        flex-direction: column;
-    }
-    #mybtn1{
-        display: block;
-        position: absolute;
-        width: 21%;
-        top: 88%;
-        left: 40%;
-        text-align: center;
-    }
-    
-    #mybtn2{
-
-        display: block;
-        position: absolute;
-        width: 21%;
-        top: 75%;
-        left: 40%;
-        text-align: center;
+    .nav-links li{
+        margin: 30px 0;
     }
     .menu-btn{
         display: block;
-        position: fixed;
-        z-index: 100;
+        z-index: 2;
     }
     .menu-btn:hover{
         transform: scale(1.1);
@@ -647,12 +614,12 @@ footer p.hh span{
     gap: 0.4rem;
     width: 70vw;
     padding: 1.3rem;
-    height: 80%;
+    height: 80vh;
     position: fixed;
     z-index: 101;
     top: 10vh;
     left: 15vw;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: black;
     border: 1px solid #ddd;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -735,12 +702,11 @@ footer p.hh span{
 
 .descrip-image{
     width: -webkit-fill-available;
-    height: 30vmin;
+height: 200px;
 }
 
 .description-placeholder{
     width:50%;
     margin-left: 5%;
     height: inherit;
-    background-color: red;
 }

@@ -30,14 +30,10 @@ window.onclick=function(event){ /*maajoula bech ki nenzlou hors el formulaire te
 
 function show(){
     if (test){
-        document.getElementById('passw').setAttribute("type","password");
-        console.log("aaaaaaa");
-        document.getElementById('eyes').setAttribute('src','/img/imgsignup/hidden.png');
+        document.getElementById('pass').setAttribute("type","password");
         test=false;
     }else{
-        document.getElementById('passw').setAttribute("type","text");
-        console.log("bbbbb");
-        document.getElementById('eyes').setAttribute('src','/img/imgsignup/eye.png');
+        document.getElementById('pass').setAttribute("type","text");
         test=true;
     }
 }
