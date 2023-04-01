@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100");
+@import url('https://fonts.googleapis.com/css2?family=Condiment&family=Quicksand&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -6,7 +8,9 @@
     list-style-type:none;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Condiment', cursive !important;
+        font-family: 'Quicksand', sans-serif !important;
+
 }
 /**************/ 
 
@@ -27,10 +31,10 @@ body{
 }
 /*--------LES VARIABLES-------*/
 :root{
-    --white:#fff;
+    --white:#ccc;
     --blue:#86b8d7;
     --dark:#0d0d0d;
-    --grey:#808080;
+    --grey:#262626;
     --titre1:11vmin;
     --titre2:5.65vmin;
     --titre3:4.4vmin;
@@ -41,7 +45,7 @@ body{
     background-color: var(--grey);
     width: 100%;
     height: 100vh;
-    background-image:url("../amcars-main/img/intro.jpg");
+    background-image:url("./img/intro.jpg");
     background-size: cover;
     background-position: center;
     clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 50% 100%, 0 88%);
@@ -57,10 +61,6 @@ body{
         padding-top: 15px;
         padding-right: 8%;
         justify-content: space-between;
-      
-
-        
-      
       }
 
       nav ul li{
@@ -73,7 +73,7 @@ body{
         font-weight: bold;
         text-transform: capitalize;
         font-size: 16px;
-        font-family: Georgia, serif !important ;
+        /*font-family: Georgia, serif !important ;*/
         
         
     }
@@ -255,6 +255,7 @@ span.store{
     width: 100%;
     height: 85%;
     background-color: var(--grey);
+    padding-bottom: 50px;
 }
 .newcollection h1{
     font-size: 9vmin;
@@ -262,6 +263,8 @@ span.store{
     letter-spacing: 2px;
     color: var(--white);;
     padding-top: 1vmin;
+    font-family: 'Condiment', cursive;
+font-family: 'Quicksand', sans-serif;
 
 }
 .content{
@@ -359,7 +362,9 @@ span.store{
 .brand{
     width: 100%;
     height: 50%;
-    background-color: rgb(210, 184, 184);
+    background-color: #262626;
+    margin-top: 50px;
+    margin-bottom: 50px;
    
 }
 
@@ -369,6 +374,8 @@ span.store{
     letter-spacing: 2px;
     color: var(--white);;
     padding-top: 1vmin;
+    font-family: 'Condiment', cursive;
+font-family: 'Quicksand', sans-serif;
 
 }
 .brands-col{
@@ -402,14 +409,224 @@ span.store{
 /*-----------CONTACTUS----------*/
 .contactus{
     width: 100%;
-    height: 75%;
-    background-color: rgb(46, 43, 43);
-    background-image: url("/img/téléchargé.jpeg");
+    min-height: 80vh;
+    background-color: #000;
     display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 151px;
+    padding-bottom: 151px;
+    clip-path: polygon(50% 0, 100% 12%, 100% 88%, 50% 100%, 0 88%, 0 12%);
+
+}
+
+.contcontainer{
+    position:relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+}
+
+.contcontainer .contactInfo{
+    position:relative;
+    top: 40px;
+    width: 350px;
+    height: 470px;
+    background: #262626;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
-    justify-self: center;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.15);
+}
+
+
+.contcontainer .contactInfo h2{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+.contcontainer .contactInfo ul.myinfo{
+    position: relative;
+    margin: 20px 0;
+}
+
+.contcontainer .contactInfo ul.myinfo li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
     align-items: center;
 }
+
+
+.contcontainer .contactInfo ul.myinfo li span:nth-child(1){
+    width: 30px;
+    min-width: 30px;
+}
+
+.contcontainer .contactInfo ul.myinfo li span:nth-child(1) img{
+    max-width: 100%;
+}
+
+.contcontainer .contactInfo ul.myinfo li span:nth-child(2){
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.contcontainer .contactForm{
+    position: absolute;
+    padding: 70px 50px;
+    padding-left: 250px;
+    margin-left: 150px;
+    width:950px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 50px 50px rgba(0,0,0,0.25);
+}
+
+
+.contcontainer .contactForm h2{
+    color: #262626;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.contcontainer .contactForm .formbox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.contcontainer .contactForm .formbox .inputBox{
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.contcontainer .contactForm .formbox .inputBox.w50{
+    width: 47%;
+}
+
+.contcontainer .contactForm .formbox .inputBox.w100{
+    width: 100%;
+}
+
+.contcontainer .contactForm .formbox .inputBox input,
+.contcontainer .contactForm .formbox .inputBox textarea
+{
+    width: 100%;
+    resize: none;
+    padding:5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #777;
+}
+.contcontainer .contactForm .formbox .inputBox textarea
+{
+    height: 120px;
+}
+
+.contcontainer .contactForm .formbox .inputBox span
+{
+    position: absolute;
+    left:0;
+    padding: 5px 0;
+    pointer-events: none;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+.contcontainer .contactForm .formbox .inputBox input:valid ~span,
+.contcontainer .contactForm .formbox .inputBox textarea:valid ~span,
+.contcontainer .contactForm .formbox .inputBox input:focus ~span,
+.contcontainer .contactForm .formbox .inputBox textarea:focus ~span
+{
+     transform: translateY(-20px);
+     font-size:12px;
+     font-weight: 400;
+     letter-spacing: 1px;
+     color: #262626;
+     font-weight: 500;
+}
+
+.contcontainer .contactForm .formbox .inputBox input[type="submit"]
+{
+    position:relative;
+    cursor: pointer;
+    background: #262626;
+    color:#fff;
+    border: none;
+    max-width: 150px;
+    padding:12px;
+}
+
+.contcontainer .contactForm .formbox .inputBox input[type="submit"]:hover
+{
+
+    background: #444444;
+}
+
+/* responsive contact us */
+
+@media(max-width: 1200px){
+    .contcontainer{
+        width:90%;
+        min-width: auto;
+        margin:20px;
+    }
+
+    .contcontainer .contactInfo{
+        top:0;
+        height: 550px;
+        position: relative;
+        box-shadow: none;
+    }
+
+    .contcontainer .contactForm{
+        position:relative;
+        width: 750px;
+        padding-left: 0;
+        margin-left: 0;
+        padding:40px;
+        height: 550px;
+        box-shadow: none;
+
+
+    }
+}
+
+@media(max-width: 1200px){
+    .contcontainer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contcontainer .contactForm{
+        width:100%;
+        height: auto;
+    }
+
+    .contcontainer .contactInfo{
+        width:100%;
+        height: auto;
+    }
+}
+
+
+
+/*
 .contactus h2{
     font-size: var(--titre1);
     text-align: center;
@@ -476,6 +693,8 @@ span.store{
     width: 30vmin;
 }  
 
+*/
+
 
 /*-----------bestseller----------*/
 .bestseller{
@@ -484,6 +703,8 @@ span.store{
     background-color: #272425;
 }
 .bestseller h1{
+    font-family: 'Condiment', cursive;
+    font-family: 'Quicksand', sans-serif;
     font-size: var(--titre1);
     text-align: center;
     letter-spacing: 2px;
@@ -502,6 +723,9 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    clip-path: polygon(50% 0%, 100% 12%, 100% 100%, 0 100%, 0 12%);
 }
 footer h3 {
     margin-top: 20px;
@@ -517,7 +741,7 @@ footer h3 span {
 footer p{
     width: 30%;
     text-align:center;
-    color: var(--grey);
+    color: #ccc;
 }
 footer ul li{
     display: inline-block;
@@ -684,7 +908,7 @@ footer p.hh span{
     border:1px dashed white;
     padding: 10px;
     margin-bottom: 10px;
-    background: rgba( 255, 255, 255, 0.45 );
+    background: #262626;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 14.5px );
     -webkit-backdrop-filter: blur( 14.5px );
