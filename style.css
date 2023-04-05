@@ -343,10 +343,11 @@ font-family: 'Quicksand', sans-serif;
 .boutt{
         border:1px solid currentColor;
         border-radius: 30px;
-        color:var(--blue);
+        color:var(--dark);
         background-color :rgb(99, 99, 99);
         font-size: var(--titre4);
         font-weight:600;
+        margin-top: 15px;
         overflow:hidden;
         padding:7px 15px;
         position:relative;
@@ -416,7 +417,7 @@ font-family: 'Quicksand', sans-serif;
     align-items: center;
     padding-top: 151px;
     padding-bottom: 151px;
-    clip-path: polygon(50% 0, 100% 12%, 100% 88%, 50% 100%, 0 88%, 0 12%);
+   clip-path: polygon(50% 0, 100% 12%, 100% 88%, 50% 100%, 0 88%, 0 12%); 
 
 }
 
@@ -698,9 +699,18 @@ font-family: 'Quicksand', sans-serif;
 
 /*-----------bestseller----------*/
 .bestseller{
-    height: 70vh;
+    height: 100vh;
     width: 100%;
     background-color: #272425;
+   
+}
+.bestseller video {
+    position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
 }
 .bestseller h1{
     font-family: 'Condiment', cursive;
@@ -725,7 +735,7 @@ footer{
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    clip-path: polygon(50% 0%, 100% 12%, 100% 100%, 0 100%, 0 12%);
+  /* clip-path: polygon(50% 0%, 100% 12%, 100% 100%, 0 100%, 0 12%); */
 }
 footer h3 {
     margin-top: 20px;
@@ -829,7 +839,7 @@ footer p.hh span{
 }
 
 
-
+/*****************************************************************/
 
 
 
@@ -843,7 +853,7 @@ footer p.hh span{
     z-index: 101;
     top: 10vh;
     left: 15vw;
-    background-color: black;
+    background-color: var(--dark);
     border: 1px solid #ddd;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -852,6 +862,7 @@ footer p.hh span{
     -o-border-radius: 5px;
     overflow-y:scroll;
     scroll-behavior: smooth;
+
 }
 
 .modal .flex {
@@ -900,6 +911,337 @@ footer p.hh span{
     display: none;
   }
   
+
+
+  .modal10 {
+    gap: 0.4rem;
+    width: 70vw;
+    padding: 1.3rem;
+    height: 80vh;
+    position: fixed;
+    z-index: 101;
+    top: 10vh;
+    left: 15vw;
+    background-color: var(--dark);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+
+}
+
+.modal10 .flex10 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+  
+  .btn10 {
+    display: inline-block;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+  }
+  
+  
+  .btn-close10 {
+    transform: translate(10px, -20px);
+    padding: 0.5rem 0.7rem;
+    background: #eee;
+    border-radius: 50%;
+    -webkit-transform: translate(10px, -20px);
+    -moz-transform: translate(10px, -20px);
+    -ms-transform: translate(10px, -20px);
+    -o-transform: translate(10px, -20px);
+}
+  
+  .overlay10 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 100;
+  }
+
+  
+/*********************************/
+
+  .modal11 {
+    gap: 0.4rem;
+    width: 70vw;
+    padding: 1.3rem;
+    height: 80vh;
+    position: fixed;
+    z-index: 101;
+    top: 10vh;
+    left: 15vw;
+    background-color: var(--dark);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+
+}
+
+.modal11 .flex11 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+  
+  .btn11 {
+    display: inline-block;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+  }
+  
+  
+  .btn-close11 {
+    transform: translate(10px, -20px);
+    padding: 0.5rem 0.7rem;
+    background: #eee;
+    border-radius: 50%;
+    -webkit-transform: translate(10px, -20px);
+    -moz-transform: translate(10px, -20px);
+    -ms-transform: translate(10px, -20px);
+    -o-transform: translate(10px, -20px);
+}
+  
+  .overlay11 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 100;
+  }
+
+
+
+/*********************************/
+
+.modal12 {
+    gap: 0.4rem;
+    width: 70vw;
+    padding: 1.3rem;
+    height: 80vh;
+    position: fixed;
+    z-index: 101;
+    top: 10vh;
+    left: 15vw;
+    background-color: var(--dark);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+
+}
+
+.modal12 .flex12 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+  
+  .btn12 {
+    display: inline-block;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+  }
+  
+  
+  .btn-close12 {
+    transform: translate(10px, -20px);
+    padding: 0.5rem 0.7rem;
+    background: #eee;
+    border-radius: 50%;
+    -webkit-transform: translate(10px, -20px);
+    -moz-transform: translate(10px, -20px);
+    -ms-transform: translate(10px, -20px);
+    -o-transform: translate(10px, -20px);
+}
+  
+  .overlay12 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 100;
+  }
+
+
+  /*********************************/
+
+.modal13 {
+    gap: 0.4rem;
+    width: 70vw;
+    padding: 1.3rem;
+    height: 80vh;
+    position: fixed;
+    z-index: 101;
+    top: 10vh;
+    left: 15vw;
+    background-color: var(--dark);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+
+}
+
+.modal13 .flex13 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+  
+  .btn13 {
+    display: inline-block;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+  }
+  
+  
+  .btn-close13 {
+    transform: translate(10px, -20px);
+    padding: 0.5rem 0.7rem;
+    background: #eee;
+    border-radius: 50%;
+    -webkit-transform: translate(10px, -20px);
+    -moz-transform: translate(10px, -20px);
+    -ms-transform: translate(10px, -20px);
+    -o-transform: translate(10px, -20px);
+}
+  
+  .overlay13 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 100;
+  }
+
+/*********************************/
+
+.modal14 {
+    gap: 0.4rem;
+    width: 70vw;
+    padding: 1.3rem;
+    height: 80vh;
+    position: fixed;
+    z-index: 101;
+    top: 10vh;
+    left: 15vw;
+    background-color: var(--dark);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+
+}
+
+.modal14 .flex14 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+  
+  .btn14 {
+    display: inline-block;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+  }
+  
+  
+  .btn-close14 {
+    transform: translate(10px, -20px);
+    padding: 0.5rem 0.7rem;
+    background: #eee;
+    border-radius: 50%;
+    -webkit-transform: translate(10px, -20px);
+    -moz-transform: translate(10px, -20px);
+    -ms-transform: translate(10px, -20px);
+    -o-transform: translate(10px, -20px);
+}
+  
+  .overlay14 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 100;
+  }
+
+
+/************************************************/
 
 .width-100{
     width:100%;
