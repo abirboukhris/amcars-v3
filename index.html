@@ -208,12 +208,13 @@
       <div class="overlay12 hidden"></div>
       <div class="overlay13 hidden"></div>
       <div class="overlay14 hidden"></div>
- 
+    
      <nav class="collapse">
         <img src="./img/log.png" alt="" class="logo">
         <ul class="nav-links">
             <li><a href="#" class="home">HOME</a></li>
             <li><a href="#brand">BRANDS</a></li>
+            <li><a href="#news">NEWS</a></li>
             <li><a href="#contactus">CONTACT</a></li>
         </ul>
                 <a href="#login" class="login" id="mybtn1">Login</a>
@@ -223,15 +224,15 @@
     <!-- BOUTTON LOGIN  = POP IN LOGIN -->
     <div class="modal1" id="mymodal1" onclick="">
         <div class="modal-content clearfix">
-        <form action="www.google.com" class="formulaire clearfix">
+        <form  action="signup.php" method="post" class="formulaire clearfix">
             <div class="modal-header clearfix">
                 <h1 class="title clearfix">Login</h1>
                 <span class="close clearfix">&times;</span>
             </div>
             <div class="modal-body clearfix">
                 <ul>
-                    <li><img  class="image clearfix" src="./img/imglogin/user.png" alt=""><input class="user clearfix" type="text" placeholder=" Username"></li>
-                    <li><img  class="image clearfix" src="./img/imglogin/padlock.png" alt=""><input class="user1 clearfix" id="pass" type="password" placeholder=" Password"><img id="eye" class="eye" src="./img/imglogin/eye.png" onclick="show()" alt=""></li>
+                    <li><img  class="image clearfix" src="./img/imglogin/user.png" alt=""><input class="user clearfix" type="text" placeholder=" Username" required></li>
+                    <li><img  class="image clearfix" src="./img/imglogin/padlock.png" alt=""><input class="user1 clearfix" id="pass" type="password" placeholder=" Password" required></li>
                     <li><a href="" class="lien">Forgot your password ?</a></li>
                 </ul>
             </div>
@@ -246,7 +247,8 @@
 <!-- BOUTTON SIGNUP  = POP IN SIGNUP -->
 <div class="modal2" id="mymodal2" onclick="">
     <div class="modal-content2 clearfix">
-    <form name="myform2" id="myform2" action="" class="formulaire2 clearfix" onsubmit="return validation()">
+    <form name="myform2" id="myform2" action="signup.php" method="po
+    " class="formulaire2 clearfix" onsubmit="return validation()">
         <div class="modal-header2 clearfix">
             <h1 class="title2 clearfix">Sign up</h1>
             <span class="close2 clearfix">&times;</span>
@@ -260,16 +262,16 @@
                 <li>
                     <select name="genre2" id="genre2" class="user2">
                         <option value="" selected>Sexe</option>
-                        <option value="">Male</option>
-                        <option value="">Female</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
                     </select>
                     <select name="pays2" id="pays2" class="user2">
                         <option value="" selected>Country</option>
-                        <option value="">Tunisia</option>
-                        <option value="">Algeria</option>
-                        <option value="">Morocco</option>
-                        <option value="">Palestine</option>
-                        <option value="">United States</option>
+                        <option value="Tunisia">Tunisia</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="Morocco">Morocco</option>
+                        <option value="Palestine">Palestine</option>
+                        <option value="United">United States</option>
                     </select>
                 </li>
                 <small id="errorg2" class="error2"></small>
@@ -296,16 +298,22 @@
 </div>
   
     <!--Fin SIGNUP -->
+    <img src="./img/bar.png" class="menu-btn">
     <header class="header">
        
-        <img src="./img/bar.png" class="menu-btn">
+       
 <!-- welcome -->
        <!-- <section class="welcome">
             <div><h1>Welcome To Our</h1>
                 <h1><span class="store">store!</span></h1>  </div>
         </section> -->
         <section class="welcome" >
+            <img src="./img/log.png" alt="" class="logo-hidden">
+            <video autoplay muted loop>
+                <source src="img/2021 Akrapovic BMW M8 Gran Coupe - ULTRA Performance M8 here! (1).mp4" type="video/mp4">
+              </video>
             <div class="info">
+            
             <h1 ><span>100+</span></h1>
             <p >Types of machine</p>
             </div>
@@ -356,11 +364,12 @@
  
 
 <!-- bestseller -->
-<section class="bestseller">
-    <h1>BEST SELLERS</h1>
-    <video autoplay muted loop>
-        <source src="../amcars-main/img/2021 Akrapovic BMW M8 Gran Coupe - ULTRA Performance M8 here! (1).mp4" type="video/mp4">
-      </video>
+<section class="bestseller" id="news">
+    <h1>NEWS</h1>
+   <!-- <video autoplay muted loop>
+        <source src="./img/2021 Akrapovic BMW M8 Gran Coupe - ULTRA Performance M8 here! (1).mp4" type="video/mp4">
+      </video>-->
+      <iframe src="https://www.youtube.com/embed/jwC061bKG2Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
 </section>
 
 <!-- brand -->
@@ -489,7 +498,7 @@ function showDivs(n) {
 </script>
     <script>
         const menubtn=document.querySelector('.menu-btn');
-        const navlinks=document.querySelector('.nav-links');
+        const navlinks=document.querySelector('.collapse');
         menubtn.addEventListener('click',()=>{
             navlinks.classList.toggle('menu-mobile');
         })

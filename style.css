@@ -45,7 +45,7 @@ body{
     background-color: var(--grey);
     width: 100%;
     height: 100vh;
-    background-image:url("./img/intro.jpg");
+    /*background-image:url("./img/intro.jpg");*/
     background-size: cover;
     background-position: center;
     clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 50% 100%, 0 88%);
@@ -88,7 +88,7 @@ body{
 }
 
     a.login{
-        border:1px solid currentColor;
+        border:0px solid currentColor;
         border-radius: 30px;
         color:var(--blue);
         font-size: var(--titre4);
@@ -123,7 +123,7 @@ body{
         }
 
     a.signup{
-        border:1px solid currentColor;
+        border:0px solid currentColor;
         border-radius: 30px;
         color:var(--blue);
         font-size: var(--titre4);
@@ -167,6 +167,7 @@ a.signup:hover::after{
         transform: scale(1.05);
         will-change:transform;
     }
+
     .logo{
         cursor: pointer;
         font-size: 30px;
@@ -189,13 +190,62 @@ a.signup:hover::after{
         right: 30px;
 
     }
-/*-----------WELCOME----------*/
-.info{
+    /*-----------WELCOME----------*/
+    .welcome {
+      padding-bottom: 2px;
+      --bg-h: 2px;
+      /*width: 90%;
+      height: 25px;*/
+      width: 100%;
+      height:100%;
+      position:relative;
+      color:var(--white);;
+      z-index: 0;
+    }
+    .logo-hidden{
+        display:none;
+        position: absolute;
+        margin: 0;
+        top:0%;
+        left: 35%;
+        z-index: 5;
+        padding: 0;
+        height: 200px;
+        width: 250px;
+    }
+    .welcome div h1 span{
+        font-size: 70px;
+        font-weight:800;
+    }
+    .welcome div p{
+        font-size: 4vmin;
+        font-weight:500;
+    }
+   .info{
+    position: absolute;
+    top: 20%;
+    left:10%;
+    font-size: 4vmin;
+   } 
+   .info1{
+    position: absolute;
+    top: 50%;
+    left:10%;
+    font-size: 4vmin;
+   } 
+   .rem1{
+    position: absolute;
+    top: 30%;
+    left:60%;
+    width: 39%;
+    font-size: 4vmin;
+   } 
+/*.info{
     position: absolute;
     font-size: 4vmin;
     top: 900%;
     left: 8%;
-   
+   z-index: 0;
 
 }
 .info1{
@@ -203,7 +253,8 @@ a.signup:hover::after{
     font-size: 4vmin;
     top: 1000%;
     left: 8%;
-    margin-top: 10%
+    margin-top: 10%;
+    z-index: 0;
 
 }
 .rem1{
@@ -212,21 +263,20 @@ a.signup:hover::after{
      text-align: justify;
     line-height: 150%;
     margin-top: 18%;
-}
+    z-index: 0;
+}*/
   .welcome:where(:hover, :focus-visible) {
     background-size: 100% var(--bg-h);
     background-position-x: left;
+    z-index: 0;
   }
   
-  .welcome {
-    padding-bottom: 2px;
-    --bg-h: 2px;
-    width: 90%;
-    height: 25px;
-    position:absolute;
-    color:var(--white);;
-   
-  }
+.welcome video{
+    width: 100%;
+    height: 100%;
+    filter:brightness(0.3);
+    object-fit: cover;
+}
 /*section.welcome{
  
  
@@ -240,7 +290,7 @@ a.signup:hover::after{
 
 
   section.welcome:hover {
-    color: var(--blue);
+    color: white;
     transition: 1s;
 }
 section.welcome span:hover{
@@ -701,17 +751,18 @@ font-family: 'Quicksand', sans-serif;
 .bestseller{
     height: 100vh;
     width: 100%;
-    background-color: #272425;
-   
+    background-color: #000000;
+   position: relative;
 }
-.bestseller video {
+
+/*.bestseller video {
     position: relative;
   top: 0;
   left: 0;
   width: 100%;
   height: 85vh;
   object-fit: cover;
-}
+}*/
 .bestseller h1{
     font-family: 'Condiment', cursive;
     font-family: 'Quicksand', sans-serif;
@@ -720,15 +771,22 @@ font-family: 'Quicksand', sans-serif;
     letter-spacing: 2px;
     color: var(--white);
     padding-top: 1vmin;
-    
-
+}
+iframe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-top: 0;
+    width: 60%;
+    height: 60%;
 }
 
 /*-----------footer----------*/
 footer{
     width: 100%;
     height: 30%;
-    background-color: rgb(11, 11, 11);
+    background-color:var(--grey);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -770,8 +828,9 @@ footer ul li a img:hover{
     filter: contrast(200%);
    }
 footer p.hh{
-    color: var(--grey);
-    font-size: 16px;
+    color: var(--black);
+    font-size: 20px;
+    font-weight: bold;
 }
 footer p.hh span{
     color: var(--blue);
@@ -784,10 +843,11 @@ footer p.hh span{
     nav{
         padding:0;
     }
+    .logo-hidden{
+        display: block;
+    }
     .logo{
-        position:absolute;
-        top: 0;
-        left: 0;
+        display: none;
     }
 
     .welcome{
@@ -804,9 +864,24 @@ footer p.hh span{
         top:75%;
         right:70%;
     }
-
-    .nav-links{
+    .collapse{
         display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        width: 100vw;
+        height: 700px;
+        justify-content: center;
+        background-color: rgba(0,0,0,.2);
+        background-color: rgba(0,0,0,.2);
+        backdrop-filter: blur(10px);
+        margin-left: -1500px;
+        transition: all 1.2s ease;
+        align-items: center;
+        z-index: 1;
+        text-align: center;
+    }
+    .nav-links{
+        /*display: flex;
         flex-direction: column;
         background-color: transparent;
         width: 100vw;
@@ -816,13 +891,39 @@ footer p.hh span{
         margin-left: -1500px;
         transition: all 1.2s ease;
         align-items: center;
-        z-index: 1;
+        z-index: 1;*/
+        display: flex;
+        flex-direction: column;
+    }
+    .test{
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+    }
+    #mybtn1{
+        display: block;
+        position: absolute;
+        width: 21%;
+        top: 88%;
+        left: 40%;
+        text-align: center;
+    }
+    
+    #mybtn2{
+
+        display: block;
+        position: absolute;
+        width: 21%;
+        top: 75%;
+        left: 40%;
+        text-align: center;
     }
     .nav-links li{
-        margin: 30px 0;
+        margin: 20px 0;
     }
     .menu-btn{
         display: block;
+        position: fixed;
         z-index: 2;
     }
     .menu-btn:hover{
