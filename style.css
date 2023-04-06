@@ -442,6 +442,8 @@ font-family: 'Quicksand', sans-serif;
 }
 .brand .brands a img{
     padding: 50px;
+    height: 200px;
+    width: 200px;
     transform: scale(1.2);
     filter: grayscale(100%);
     transition: .5s ease-in-out;
@@ -450,10 +452,11 @@ font-family: 'Quicksand', sans-serif;
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
 }
+
 .brand .brands a img:hover{
     padding: 50px;
     filter: grayscale(0%);
-    transform: scale(1.5);
+    transform: scale(1.4);
     -webkit-filter: grayscale(0%);
 }
 
