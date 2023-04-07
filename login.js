@@ -1,4 +1,4 @@
-var mybtn=document.getElementById('mybtn1');
+gvar mybtn=document.getElementById('mybtn1');
 var mybtn1=document.getElementById('mybtn2');
 
 var mymodal=document.getElementById('mymodal1');
