@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +11,6 @@
     <title>AMCars</title>
     
     <link rel="shortcut icon" href="./img/log.png" type="x-icon">
-    <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="signup.css">
 </head>
@@ -25,7 +28,7 @@
                 <h4>Description:</h4>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ... </p>
-                     <button class="boutt" onclick="" ><a href="/car-details-audi-q3/car-details/car-details.html" onclick="alert('lezem tkoun connecté (en cours  bech tetgad)')">Learn More</a></button>
+                     <button class="boutt" onclick="" ><a onclick="alert('You have to log in !')">Learn More</a></button>
                     </div>
          
         </div>
@@ -40,7 +43,7 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                      </p>
-                     <button class="boutt" ><a href="/car-details-audi-a3sport/car-details/car-details.html"  onclick="alert('lezem tkoun connecté (en cours  bech tetgad)')">Learn More</a></button>
+                     <button class="boutt" ><a onclick="alert('You have to log in !')">Learn More</a></button>
             </div>
         </div>
       </section>
@@ -56,7 +59,7 @@
                 <h4>Description:</h4>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ... </p>
-                     <button class="boutt" ><a href="/car-details-bmw-serie1/car-details/car-details.html"  onclick="alert('lezem tkoun connecté (en cours  bech tetgad)')">Learn More</a></button>
+                     <button class="boutt" ><a  onclick="alert('You have to log in !')">Learn More</a></button>
                     </div>
          
         </div>
@@ -71,7 +74,7 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                      </p>
-                     <button class="boutt" ><a href="/car-details-bmw-x2/car-details/car-details.html"  onclick="alert('lezem tkoun connecté (en cours  bech tetgad)')">Learn More</a></button>
+                     <button class="boutt" ><a  onclick="alert('You have to log in !')">Learn More</a></button>
             </div>
         </div>
       </section>
@@ -87,7 +90,7 @@
                 <h4>Description:</h4>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ... </p>
-                     <button class="boutt" ><a href="/car-details-mercedes-classe-a/car-details/car-details.html"  onclick="alert('lezem tkoun connecté (en cours  bech tetgad)')">Learn More</a></button>
+                     <button class="boutt" ><a  onclick="alert('You have to log in !')">Learn More</a></button>
                     </div>
          
         </div>
@@ -102,7 +105,7 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                      </p>
-                     <button class="boutt" ><a href="/car-details-mercedes-gla/car-details/car-details.html"  onclick="alert('lezem tkoun connecté (en cours  bech tetgad)')">Learn More</a></button>
+                     <button class="boutt" ><a  onclick="alert('You have to log in !')">Learn More</a></button>
             </div>
         </div>
       </section>
@@ -119,7 +122,7 @@
                 <h4>Description:</h4>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ... </p>
-                     <button class="boutt" ><a href="/car-details-seat-ibiza/car-details/car-details.html"  onclick="alert('lezem tkoun connecté (en cours  bech tetgad)')">Learn More</a></button>
+                     <button class="boutt" ><a  onclick="alert('You have to log in !')">Learn More</a></button>
                     </div>
          
         </div>
@@ -134,7 +137,7 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                      </p>
-                     <button class="boutt" ><a href="/car-details-seat-leon/car-details/car-details.html"  onclick="alert('lezem tkoun connecté (en cours  bech tetgad)')">Learn More</a></button>
+                     <button class="boutt" ><a  onclick="alert('You have to log in !')">Learn More</a></button>
             </div>
         </div>
       </section>
@@ -150,7 +153,7 @@
                 <h4>Description:</h4>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ... </p>
-                     <button class="boutt" ><a href="/car-details-porshe-macan/car-details/car-details.html"  onclick="alert('lezem tkoun connecté (en cours  bech tetgad)')">Learn More</a></button>
+                     <button class="boutt" ><a   onclick="alert('You have to log in !')">Learn More</a></button>
                     </div>
          
         </div>
@@ -165,7 +168,7 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                      </p>
-                     <button class="boutt" ><a href="/car-details-porshe-boxster/car-details/car-details.html"  onclick="alert('lezem tkoun connecté (en cours  bech tetgad)')">Learn More</a></button>
+                     <button class="boutt" ><a onclick="alert('You have to log in !')">Learn More</a></button>
             </div>
         </div>
       </section>
@@ -181,7 +184,7 @@
                 <h4>Description:</h4>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ... </p>
-                     <button class="boutt" ><a href="/car-details-polo/car-details/car-details.html"  onclick="alert('lezem tkoun connecté (en cours  bech tetgad)')">Learn More</a></button>
+                     <button class="boutt" ><a   onclick="alert('You have to log in !')">Learn More</a></button>
                     </div>
          
         </div>
@@ -196,7 +199,7 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                      </p>
-                     <button class="boutt" ><a href="/car-details-golf7/car-details/car-details.html"  onclick="alert('lezem tkoun connecté (en cours  bech tetgad)')">Learn More</a></button>
+                     <button class="boutt" ><a onclick="alert('You have to log in !')">Learn More</a></button>
             </div>
         </div>
       </section>
@@ -210,7 +213,7 @@
       <div class="overlay14 hidden"></div>
     
      <nav class="collapse">
-        <img src="/img/log.png" alt="" class="logo">
+        <img src="./img/log.png" alt="" class="logo">
         <ul class="nav-links">
             <li><a href="#" class="home">HOME</a></li>
             <li><a href="#brand">BRANDS</a></li>
@@ -223,32 +226,46 @@
     </nav>
     <!-- BOUTTON LOGIN  = POP IN LOGIN -->
     <div class="modal1" id="mymodal1" onclick="">
+        <link rel="stylesheet" href="login.css">
         <div class="modal-content clearfix">
-        <form  action="signup.php" method="post" class="formulaire clearfix">
+        <form action="login.php"  method="post" name="myf" id="myf" class="formulaire clearfix" onsubmit="return verfication()">
             <div class="modal-header clearfix">
                 <h1 class="title clearfix">Login</h1>
                 <span class="close clearfix">&times;</span>
             </div>
             <div class="modal-body clearfix">
                 <ul>
-                    <li><img  class="image clearfix" src="./img/imglogin/user.png" alt=""><input class="user clearfix" type="text" placeholder=" Username" required></li>
-                    <li><img  class="image clearfix" src="./img/imglogin/padlock.png" alt=""><input class="user1 clearfix" id="pass" type="password" placeholder=" Password" required></li>
-                    <li><a href="" class="lien">Forgot your password ?</a></li>
+                    <li><img  class="image clearfix" src="./img/imglogin/user.png" alt=""><input class="user clearfix" id="user" name="user" type="text" placeholder=" Username" ></li>
+                    <small id="eu" class="error2"></small>
+                    <li><img  class="image clearfix" src="./img/imglogin/padlock.png" alt=""><input class="user1 clearfix" name="pass" id="pass" type="password" placeholder=" Password"></li>
+                    <small id="ep" class="error2"></small>
+                    <li>
+                        <!--------------------------PHP------------------------------->
+                        <?php
+                        if (isset($_GET['message'])) {
+                            echo "Incorrect Password/Username !"; }
+                        else if (isset($_GET['login'])){
+                                echo "Registred Successfully , now login !";
+                            }
+                        ?>
+                        <!------------------------------------------------------------>
+                    </li>
                 </ul>
             </div>
             <div class="modal-footer">
-                <input type="submit" value="OK !" class="send">
+                <input type="submit" name="login" value="Connect" class="send" onclick="">
             </div>
+        </form>
         </div>
-    </form>
     </div>
-    <script src="login.js"></script>
+    <script src="login.js">
+    </script>
+
     <!--Fin LOGIN -->
 <!-- BOUTTON SIGNUP  = POP IN SIGNUP -->
 <div class="modal2" id="mymodal2" onclick="">
     <div class="modal-content2 clearfix">
-    <form name="myform2" id="myform2" action="signup.php" method="po
-    " class="formulaire2 clearfix" onsubmit="return validation()">
+    <form action="signup.php" method="post" name="myform2" id="myform2" class="formulaire2 clearfix" onsubmit="return validation()">
         <div class="modal-header2 clearfix">
             <h1 class="title2 clearfix">Sign up</h1>
             <span class="close2 clearfix">&times;</span>
@@ -278,7 +295,7 @@
                 <small id="errorp2" class="error2"></small>
                 <li>
                     <img  class="image2 clearfix" src="./img/imgsignup/birthday.png" alt="">
-                    <input name="date12" type="date2" name="" id="" class="user2" value="12/12/2001">
+                    <input name="date12" type="date"  id="" class="user2" value="12/12/2001">
                 </li>
                 <small id="errord2" class="error2"></small>
                 <li>
@@ -286,12 +303,29 @@
                     <input name="pass2" class="user1 clearfix" id="pass2" type="password" placeholder=" Password">
                     <img id="eye2" class="eye2" src="./img/imgsignup/hidden.png" onclick="show()" alt="">
                 </li>
+                <small id="erpass" class="error2"></small>
+                <!--------------------------PHP------------------------------->
+                <?php
+                    if (isset($_GET['signup'])) {
+                        $message = $_GET['signup'];
+                        echo "Username/Email existant !"; }
+                ?>
+                <!------------------------------------------------------------>
                 <small id="errorg2" class="errorpass2"></small>
             </ul>
         </div>
         <div class="modal-footer2">
-            <input type="submit" value="OK !" class="send2">
+            <input type="submit" value="Register" class="send2">
             <script src="signup.js"></script>
+            <script>
+                function openmodal(){
+                    mymodal1.style.display="block";
+                }
+                const urlParams1 = new URLSearchParams(window.location.search);
+                if (urlParams1.has("signup")){
+                    openmodal();
+                }
+            </script>
         </div>
     </div>
 </form>
@@ -341,11 +375,11 @@
         <section class="newcollection">
             <h1>NEW COLLECTION</h1>
             <div class="content display-container" style="max-width:800px">
-                <a href="car-details-audi-a3sport/car-details/car-details.html"  onclick="alert('lezem tkoun connecté (en cours  bech tetgad)')"><img class="mySlides" src="./img/audi.png" style="width:100%"></a>
-                <a href="car-details-bmw-serie1/car-details/car-details.html"  onclick="alert('lezem tkoun connecté (en cours  bech tetgad)')"><img class="mySlides" src="./img/bmw.png" style="width:100%"></a>
-                <a href="car-details-seat-leon/car-details/car-details.html"  onclick="alert('lezem tkoun connecté (en cours  bech tetgad)')"><img class="mySlides" src="./img/leon.png" style="width:100%"></a>
-                <a href="car-details-mercedes-classe-a/car-details/car-details.html"  onclick="alert('lezem tkoun connecté (en cours  bech tetgad)')"><img class="mySlides" src="./img/mercedes.png" style="width:100%"></a>
-                <a href="car-details-seat-ibiza/car-details/car-details.html"  onclick="alert('lezem tkoun connecté (en cours  bech tetgad)')"><img class="mySlides" src="./img/ibiza.png" style="width:100%"></a>
+                <a  onclick="alert('You have to log in !')"><img class="mySlides" src="./img/audi.png" style="width:100%"></a>
+                <a  onclick="alert('You have to log in !')"><img class="mySlides" src="./img/bmw.png" style="width:100%"></a>
+                <a  onclick="alert('You have to log in !')"><img class="mySlides" src="./img/leon.png" style="width:100%"></a>
+                <a  onclick="alert('You have to log in !')"><img class="mySlides" src="./img/mercedes.png" style="width:100%"></a>
+                <a  onclick="alert('You have to log in !')"><img class="mySlides" src="./img/ibiza.png" style="width:100%"></a>
                 <div class="center container section large text-white display-bottommiddle" style="width:100%">
                   <div class="left-arrow hover-arrow" onclick="plusDivs(-1)">&#10094;</div>
                   <div class="right-arrow hover-arrow" onclick="plusDivs(1)">&#10095;</div>
@@ -653,14 +687,6 @@ const openModal14 = function () {
 };
 // open modal event
 openModalBtn14.addEventListener("click", openModal14);
-
-
-
 </script>   
-
-
-
-
-
 </body>
 </html>

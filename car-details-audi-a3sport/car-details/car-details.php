@@ -30,9 +30,9 @@
 
     <div class="image">
         <div class="slider">
-            <img src="/car-details-audi-a3sport/car-details/img/image3.jpg"  >
-            <img src="/car-details-audi-a3sport/car-details/img/image2.jpg"  >
-            <img src="/car-details-audi-a3sport/car-details/img/image1.jpg" >
+            <img src="img/image3.jpg"  >
+            <img src="img/image2.jpg"  >
+            <img src="img/image1.jpg" >
             <button class="prev arrow-left"><div></div></button>
             <button class="next arrow-right"><div></div></button>
         </div>
@@ -93,9 +93,9 @@
 </section>
 <section class="rent">
     <div class="container1">
-        <div class="element"><img src="/car-details/car-details/img/quality-service.png" alt="" class="icon"><legend><span>Quality</span></legend></div>
-        <div class="element"><img src="/car-details/car-details/img/low-price.png" alt="" class="icon"><legend><span>Cheapest Prices</span></legend></div>
-        <div class="element"><img src="/car-details/car-details/img/customer-service.png" alt="" class="icon"><legend><span>Satisfied Clients</span></legend></div>
+        <div class="element"><img src="../car-details/car-details/img/quality-service.png" alt="" class="icon"><legend><span>Quality</span></legend></div>
+        <div class="element"><img src="../car-details/car-details/img/low-price.png" alt="" class="icon"><legend><span>Cheapest Prices</span></legend></div>
+        <div class="element"><img src="../car-details/img/customer-service.png" alt="" class="icon"><legend><span>Satisfied Clients</span></legend></div>
     </div>
     
     <div class="conainter2"><button type="submit" class="rentnow">RENT NOW</button></div>
@@ -104,10 +104,10 @@
         <h3><i><span>AM</span>Cars</i></h3>
         <p>AMCars is a luxury car rental company, in other words high-end cars, founded by Abir Boukhris and Maher Bouchrara and using this site you can make an online reservation and save time.</p>
         <ul>
-            <li><a href=""><img src="/img/facebook.png" alt="" height="30px"></a></li>
-            <li><a href=""><img src="/img/instagram.png" alt="" height="30px"></a></li>
-            <li><a href=""><img src="/img/linkedin.png" alt="" height="30px"></a></li>
-            <li><a href=""><img src="/img/tweeter.png" alt="" height="30px"></a></li>
+            <li><a href=""><img src="img/facebook.png" alt="" height="30px"></a></li>
+            <li><a href=""><img src="img/instagram.png" alt="" height="30px"></a></li>
+            <li><a href=""><img src="img/linkedin.png" alt="" height="30px"></a></li>
+            <li><a href=""><img src="img/tweeter.png" alt="" height="30px"></a></li>
         </ul>
         <p class="hh">&copy; by <span>AM</span>Car</p>
 </footer>

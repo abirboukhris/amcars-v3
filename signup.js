@@ -1,12 +1,11 @@
 var mybtn1=document.getElementById('mybtn2');
 var mybtn=document.getElementById('mybtn1');
-
 var mymodal=document.getElementById('mymodal1');
 var mymodal1=document.getElementById('mymodal2');
-
 var close1=document.querySelector('.close2');
 var send1=document.querySelector('.send2');
 var test1=false;
+
 
 mybtn1.onclick=function(){
     mymodal1.style.display="block";
@@ -17,8 +16,7 @@ close1.onclick=function(){
 /*send.onclick=function(){
     mymodal.style.display="none";
 }*/
-// hhhhh
-window.onclick=function(event){ /*maajoula bech ki nenzlou hors el formulaire tetsaker */
+window.onclick=function(event){ 
 if (event.target==mymodal){
     mymodal.style.display="none"
 }
@@ -26,14 +24,15 @@ if (event.target==mymodal1){
     mymodal1.style.display="none"
 }
 }
+
 function show(){
     if (test1){
         document.getElementById('pass2').setAttribute("type","password");
-        document.getElementById('eye2').setAttribute('src','/img/imgsignup/hidden.png');
+        document.getElementById('eye2').setAttribute('src',"./img/imgsignup/hidden.png");
         test1=false;
     }else{
         document.getElementById('pass2').setAttribute("type","text");
-        document.getElementById('eye2').setAttribute('src','/img/imgsignup/eye.png');
+        document.getElementById('eye2').setAttribute('src',"./img/imgsignup/eye.png");
         test1=true;
     }
 }
@@ -69,7 +68,7 @@ function validation(){
     }
     else document.getElementById('errord2').innerHTML="";
     if(pass.value==""){
-        alert("Invalid Password!");
+        document.getElementById('erpass').innerHTML="Invalid Password!";
         pass.focus();
         return false
     }  
