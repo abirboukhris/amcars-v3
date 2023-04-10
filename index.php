@@ -15,11 +15,7 @@
     <link rel="stylesheet" href="signup.css">
 </head>
 <body>
-
-
-    <section class="modal hidden">
-
-    
+     <section class="modal hidden">
         <div class="width-100">
             <div class="image-placeholder"><img src="./img/audiq3.png" class="descrip-image"></div>
             <div class="description-placeholder">
@@ -458,35 +454,37 @@
             </div>
             <div class="contactForm">
                 <h2>Send Message</h2>
-                <div class="formbox">
+                <form action="" class="formbox">
                     <div class="inputBox w50">
-                        <input type="text" required>
+                        <input type="text" name="fname"  >
                         <span>First Name</span>
                     </div>
                     <div class="inputBox w50">
-                        <input type="text" required>
+                        <input type="text" name="lname" >
                         <span>Last Name</span>
                     </div>
                     <div class="inputBox w50">
-                        <input type="email" required>
+                        <input type="text" name="email"  >
                         <span>Email Address</span>
                     </div>
                     <div class="inputBox w50">
-                        <input type="text" required>
+                        <input type="text" name="mobile" >
                         <span>Mobile Number</span>
                     </div>
                     <div class="inputBox w100">
-                        <textarea required></textarea>
+                        <textarea  name="message"></textarea>
                         <span>Write your message here</span>
                     </div>
 
                     <div class="inputBox w100">
                         <input type="submit" value="Send">
                     </div>
-                </div>
+                    <span name="statustxt" class="statustxt">Sending your message...</span>
+                </form>
             </div>
         </div>
     </section>
+    <script src="contactus.js"></script>
 
 
 
